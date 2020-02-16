@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d89490554622d47817fc9705fa66f7, type: 3}
+  m_Name: Comming Soon
+  m_EditorClassIdentifier: 
+  gameName: Comming Soon
+  logo: {fileID: 21300000, guid: 8173f0253e1d3b74a8660351f517c832, type: 3}
+  Lockedlogo: {fileID: 21300000, guid: 8173f0253e1d3b74a8660351f517c832, type: 3}
+  Locked: 1
+  GamePrice: 0

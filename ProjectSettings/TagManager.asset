@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - player
+  - Enemy
+  - Ground
+  - Red
+  - G2RedCherry
+  - G2BlackCherry
+  - G2BlueCherry
+  - G2GreenCherry
+  - Fire
+  - win
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - BG
+  - player
+  - FrontTile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 441111015
+    locked: 0
+  - name: MG
+    uniqueID: 3616845417
+    locked: 0
+  - name: player
+    uniqueID: 1478798903
+    locked: 0
+  - name: FG
+    uniqueID: 909041015
+    locked: 0
+  - name: menu
+    uniqueID: 862570007
+    locked: 0
