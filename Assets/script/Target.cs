@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+
     public int health = 100;
     public int  Maxhealth = 100;
-    public GameObject obj;
     public HpBar hpBar;
+    public GameObject explotion;
 
     private void Start()
     {
+
         health = Maxhealth;
         hpBar.SetMaxHp(Maxhealth);
     }
@@ -27,10 +31,8 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+        PlayerPrefs.SetInt("G3Kill", PlayerPrefs.GetInt("G3Kill", 0) + 1);
         Destroy(gameObject);
-        Time.timeScale = 0f;
-        obj.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
+        Instantiate(explotion, transform.position, Quaternion.identity);
     }
-
 }

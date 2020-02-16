@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 33503550048378038}
   - component: {fileID: 23874358329844750}
   - component: {fileID: 64191210410734664}
+  - component: {fileID: 5376196690402333567}
+  - component: {fileID: -307939367133298462}
   m_Layer: 0
   m_Name: Gen_Door_01_snaps002
   m_TagString: Untagged
@@ -67,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,3 +96,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 569d3b2a61329b44cb4373ff71eaf3f1, type: 2}
+--- !u!114 &5376196690402333567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514489277716338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229932393105097419736165dd291a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &-307939367133298462
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514489277716338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.55
+  m_Center: {x: 1.15625, y: 1.484375, z: 0}

@@ -14,22 +14,23 @@ public class Setting : MonoBehaviour
         audioMixer.SetFloat("volume", volume);
         if (volume < -50) 
         {
-            PlayerPrefs.SetInt("Game1LvReached", 1);
-            PlayerPrefs.SetInt("Game2LvReached", 1);
-            PlayerPrefs.SetInt("GemNum", 100);
-            Game[0].Locked = true;
-            Game[1].Locked = true;
-            Game[2].Locked = true;
+            ReSetGame(1, 100);
         }
         if (volume > -20)
         {
-            PlayerPrefs.SetInt("Game1LvReached", 1);
-            PlayerPrefs.SetInt("Game2LvReached", 1);
-            PlayerPrefs.SetInt("GemNum", 150);
-            Game[0].Locked = true;
-            Game[1].Locked = true;
-            Game[2].Locked = true;
+            ReSetGame(1, 150);
         }
+    }
+    void ReSetGame(int GameLv,int Gem)
+    {
+        PlayerPrefs.SetInt("Game1LvReached", GameLv);
+        PlayerPrefs.SetInt("Game2LvReached", GameLv);
+        PlayerPrefs.SetInt("Game3LvReached", GameLv);
+        PlayerPrefs.SetInt("GemNum", Gem);
+        Game[0].Locked = true;
+        Game[1].Locked = true;
+        Game[2].Locked = true;
+        Game[3].Locked = true;
     }
 
     public void SetFullScreen(bool isFullScreen)
@@ -39,7 +40,6 @@ public class Setting : MonoBehaviour
             PlayerPrefs.SetInt("fullScreened", 1);
         else
             PlayerPrefs.SetInt("fullScreened", 0);
-
     }
 
 }
